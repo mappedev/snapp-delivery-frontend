@@ -1,0 +1,47 @@
+.button {
+  @apply flex items-center justify-center border-0 bg-transparent transition-colors px-5 py-2;
+}
+
+.button:hover {
+  @apply text-primary;
+}
+
+.button-horizontal {
+  @apply border-2 rounded-lg shadow;
+}
+
+.button--primary {
+  @apply bg-primary border-primary text-white;
+}
+
+.button--primary:hover {
+  @apply bg-transparent text-gray-600 shadow-none;
+}
+
+.button--secondary {
+  @apply bg-white border-white text-primary;
+}
+
+.button--secondary:hover {
+  @apply bg-transparent text-white shadow-none;
+}
+
+/* .button-container {
+  @apply flex justify-end;
+}
+
+.button-horizontal {
+  @apply w-min px-20 mx-auto mt-3 py-2 rounded-md border-2 border-primary flex items-center justify-center;
+}
+
+.button-circular {
+  @apply rounded-full border-2 border-primary p-2 text-xl cursor-pointer;
+}
+
+.button--primary {
+  @apply bg-primary text-white transition-colors;
+}
+
+.button--primary:hover {
+  @apply bg-transparent text-black;
+} */

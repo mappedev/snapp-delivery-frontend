@@ -1,8 +1,13 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { NextPage } from 'next'
+import 'styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+interface IProps {
+  Component: any
+  pageProps: any
 }
 
-export default MyApp
+export default function MyApp({ Component, pageProps }: IProps) {
+const getLayout = Component.getLayout || ((page: NextPage) => page)
+
+  return getLayout(<Component {...pageProps} />)
+}
